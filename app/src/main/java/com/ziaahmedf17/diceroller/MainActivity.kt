@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
         val rollButton : Button = findViewById(R.id.roll_button)
         rollButton.text = "Let's Roll"
         rollButton.setOnClickListener {
-            rollDice()
+            rollTheDice()
         }
     }
 
-    private fun rollDice() {
+    private fun rollTheDice() {
 
         val drawableResource = when(Random().nextInt(6)+1)
         {
